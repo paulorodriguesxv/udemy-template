@@ -19,7 +19,7 @@ const CourseInstructor = ({data}) => {
   return (
     <Box sx={{m:1, pt: 1}}>
         <Typography display="block" variant="h6" className={classes.titleContainer} style={{marginLeft: 0}}>
-            Instrutor
+            Instructors
         </Typography>
         <Typography display="block" variant="h6" sx={{ color: theme.palette.primary.main,  textDecoration: "none"}}>
               {data.name}
@@ -41,19 +41,19 @@ const CourseInstructor = ({data}) => {
             <List dense={true}>
               <ListItem >
                 <StarIcon />
-                <Typography display="block" variant="body2" sx={{pl: 1}}>{data.score} Classificações do Instrutor</Typography>
+                <Typography display="block" variant="body2" sx={{pl: 1}}>{data.score} Instructor Rating</Typography>
               </ListItem>        
               <ListItem >
                 <VerifiedIcon />
-                <Typography display="block" variant="body2" sx={{pl: 1}}>{data.ratingNumber} Avaliações</Typography>
+                <Typography display="block" variant="body2" sx={{pl: 1}}>{data.ratingNumber} Reviews</Typography>
               </ListItem>                     
               <ListItem >
                 <PeopleIcon />
-                <Typography display="block" variant="body2" sx={{pl: 1}}>{data.studentsTotal} Alunos</Typography>
+                <Typography display="block" variant="body2" sx={{pl: 1}}>{data.studentsTotal} Students</Typography>
               </ListItem>     
               <ListItem >
                 <PlayCircleFilledWhiteIcon />
-                <Typography display="block" variant="body2" sx={{pl: 1}}>{data.courses} Cursos</Typography>
+                <Typography display="block" variant="body2" sx={{pl: 1}}>{data.courses} Courses</Typography>
               </ListItem>                                                                               
             </List>           
           </Box>

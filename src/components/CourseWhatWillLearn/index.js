@@ -18,7 +18,7 @@ const CourseWhatWillLearn = ({data}) => {
 
       <Paper variant="outlined" sx={{m: 1}}>
         <Typography display="block" variant="h6" className={classes.titleContainer}>
-              O que você aprenderá
+        What you'll learn
         </Typography>
 
         <Grid container item spacing={2} >

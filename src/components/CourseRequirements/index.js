@@ -16,7 +16,7 @@ const CourseRequirements = ({data}) => {
   return (
     <Box sx={{m:1, pt: 1}}>
         <Typography display="block" variant="h6" className={classes.titleContainer} style={{marginLeft: 0}}>
-              Requisitos
+          Requirements
         </Typography>    
         <List dense={true} >
           {data.map((item, key) => (

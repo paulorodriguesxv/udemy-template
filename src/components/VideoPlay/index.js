@@ -30,7 +30,7 @@ const VideoPlay = (props) => {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} autoFocus>
-            Fechar
+            Close
           </Button>
         </DialogActions>
       </Dialog>    

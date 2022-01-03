@@ -1,44 +1,44 @@
 const markdownDescription = 
 `
-Você já deve ter ouvido falar do sucesso do jogo Axie Infinity e como o mercado de blockchain e aplicações descentralizadas tem movimentado milhões de dólares anualmente. Mas você sabia que segundo o Google, o salário médio de um desenvolvedor de Smart Contract está na faixa dos U$ 145k anuais?  
+You may have heard about the success of the Axie Infinity game and how the market for blockchain and decentralized applications has been moving millions of dollars annually. But did you know that according to Google, the average salary for a Smart Contract developer is in the range of $145k annually? 
 
-Venha comigo que vou mostrar os primeiros passos para você conhecer um pouco desse mundo. Iremos construir um jogo simples, que utiliza a blockchain do Etherium para implementação de Smart Contracts. Durante o desenvolvimento desse jogo você aprenderá todo o essencial para sair do lugar
+Come with me and I'll show you the first steps for getting to know a little of this world. We will build a simple game, which uses the Etherium blockchain to implement Smart Contracts. During the development of this game you will learn all the essentials to get out of the place. 
 
-Neste curso você terá acesso a todo o material necessário para iniciar no desenvolvimento de Smart Contract e aplicações descentralizadas, conhecidas como DApps.
-
-  
-
-Este curso é voltado para:
-
-  
-**Pessoas Desenvolvedoras**
-
-Para quem deseja aprender como desenvolver especificamente para blockchains
+In this course, you will have access to all the material you need to start developing Smart Contracts and decentralized applications, known as DApps. 
 
   
 
-**Pessoas Ligadas ao mundo Game**
+This course is aimed at: 
 
-Para quem já tem familiaridade com games e quer dar um passo adiante, implementando smart contracts e NFT's como recursos de seus games.
+  
+**Developers**
+
+For those who want to learn how to develop specifically for blockchains 
 
   
 
-**Entusiastas**
+**People connected to the Game world**
 
-Para quem já ouviu falar sobre jogos baseados em blockchain e quer ter um primeiro contato com esse mundo.  
-
-**O Que Vou Aprender?**
-
-Tudo aquilo que você precisa saber para desenvolver um jogo básico e integrá-lo a blockchain do etherium, desde a preparação básica do ambiente, aprenderá a utilizar ferramentas para o desenvolvimento de smart contracts e também como desenvolver aplicativos e jogos utilizando ReactJS.
+For those who are already familiar with games and want to go a step further, implementing smart contracts and NFT's as resources for their games. 
 
   
 
-## Para quem é este curso:
+**Enthusiasts** 
 
--   Desenvolvedores iniciantes de Blockchain curiosos sobre criação de Smart Contracts
--   Para quem deseja aprender como desenvolver especificamente para blockchains
--   Para quem já tem familiaridade com games e quer dar um passo adiante, implementando smart contracts e NFT's como recursos de seus games.
--   Para quem já ouviu falar sobre jogos baseados em blockchain e quer ter um primeiro contato com esse mundo.
+For anyone who has heard about blockchain-based games and wants to have a first contact with this world. 
+
+**What Will I Learn?** 
+
+Everything you need to know to develop a basic game and integrate it with an etherium blockchain, from the basic preparation of the environment, you will learn to use tools for the development of smart contracts and also how to develop applications and games using ReactJS.
+
+  
+
+## Who is this course for:
+
+- Beginner Blockchain developers curious about creating Smart Contracts
+- For those who want to learn how to develop specifically for blockchains
+- For those who are already familiar with games and want to go a step further, implementing smart contracts and NFT's as resources for their games.
+- For anyone who has heard about blockchain-based games and wants to have a first contact with this world.
 `
 
 export {markdownDescription}

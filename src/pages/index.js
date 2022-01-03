@@ -31,55 +31,54 @@ export async function getStaticProps() {
   const data = 
     {
       version: 'v1.1',
-      productName: 'Como criar seu primeiro Blockchain Game',
-      productSubtitle: "Smart Contracts e NFT's",
+      productName: 'How to Build Your First Blockchain Game',
+      productSubtitle: "Smart Contracts and NFT's",
       classifications: 45,
       score: 4.8,
       students: 265,
       createdBy: "Paulo Leonardo Vieira Rodrigues",
       updatedAt: "11/2021",
-      description: "texto",
       whatWillLearn:[
-        {text: "Criar, publicar e interagir com contratos inteligentes na blockchain do Ethereum"},
-        {text: "Configurar e utilizar um ambiente de desenvolvimento para Smart Contracts"},
-        {text: "Conceitos fundamentais sobre blockchain e smart contrats"},
-        {text: "Criar Aplicativos descentralizados utilizando React"},
-        {text: "Criar um jogo que interage com seu smart contract e gera NFT's como itens colecionáveis desse jogo"},
+        {text: "Building, publishing and integrating smart contracts in the Ethereum blockchain"},
+        {text: "Configure and use a developemnt environment for smart contracts"},
+        {text: "Fundamentals concepts about blockchain and smart contracts"},
+        {text: "Create decentralized applications using React"},
+        {text: "Create a game to interact with your smart contract and generate NFT's as collectable items for this game"},
       ],
       curriculum: [
-        {title: "Introdução", topics: [
-          {text: "Introdução"}
+        {title: "Introduction", topics: [
+          {text: "Introduction"}
         ]},
-        {title: "Ambiente", topics: [
+        {title: "Environment", topics: [
           {text: "Blockchain"},
-          {text: "Configuração do ambiente node"},
-          {text: "Integrando uma Wallet a nossa Blockchain local"},
-          {text: "Configuração do framework de desenvolvimento para Smart Contracts"}
+          {text: "Configuring node environment"},
+          {text: "Integrating the Wallet to our local Blockchain"},
+          {text: "Configuring our Smart Contract framework"}
         ]},
         {title: "Smart Contract", topics: [
-          {text: "Compilando nosso primeiro smart contract"},
-          {text: "Contratos robustos - Testes! Parte 1"},
-          {text: "Contratos robustos - Testes! Parte 2"},
-          {text: "Deploy do smart contract e interação na Blockchain"},
+          {text: "Building and compiling our first smart contract"},
+          {text: "Robust contracts - Test! Part 1"},
+          {text: "Robust contracts - Test! Part 2"},
+          {text: "Smart contract deploy and interaction on the Blockchain"},
         ]},
-        {title: "Blockchain Game - Inteligência do jogo", topics: [
-          {text: "Visão Geral"},
-          {text: "Criação do Game Board"},
-          {text: "Store com duck patterns"},
+        {title: "Blockchain Game - Game intelligence", topics: [
+          {text: "Overview"},
+          {text: "Creating Game Board"},
+          {text: "Store with duck patterns"},
           {text: "Game Container"},
-          {text: "Inteligência do Jogo"},
+          {text: "Game intelligence"},
         ]},        
-        {title: "Blockchain Game - Comunicação com a Blockchain", topics: [
+        {title: "Blockchain Game - Communicating with the Blockchain", topics: [
           {text: "Blockchain Provider"},
-          {text: "Interação com a Wallet - Parte 1"},
-          {text: "Interação com a Wallet - Parte 2"},
-          {text: "Listagem das NFT's"},
-          {text: "Mint - Criando a nossa NFT com base no Smart Contract"},
+          {text: "Wallet interaction - Part 1"},
+          {text: "Wallet interaction - Part 2"},
+          {text: "Listing NFT's"},
+          {text: "Mint - Building our NFT based on a Smart Contract"},
         ]}
       ],
       requirements: [
-        {text: "O conteúdo é de fácil assimilação, mesmo para quem é iniciante. Porém, o aluno terá melhor proveito se conhecer conceitos fundamentais de React"},
-        {text: "Conhecimento básico de lógica de programação"}
+        {text: "The content is easily assimilated, even for is a beginner. However, the student will have better benefits if he/she knows basic concepts about React"},
+        {text: "Basic knowledge about programming and logic"}
       ],
       instructor: {
         name: 'Paulo Leonardo Vieira Rodrigues',
@@ -89,11 +88,11 @@ export async function getStaticProps() {
         studentsTotal: 462,
         courses: 3,
         avatarUrl: "https://img-b.udemycdn.com/user/200_H/22289142_294c.jpg",
-        description: 'Como mais de 15 anos de experiência na área de desenvolvimento de software, formado em Sistemas de Energia pelo IFSC e com MBA em Arquitetura de Software. Atualmente trabalha com Arquitetura e desenvolvimento de software, focado em desenvolvimento backend python e C# .Net Core. Apaixonado por Machine Learning, área na qual desenvolveu um serviço de reconhecimento de ritmos musicais e também teve o prazer de ganhar algumas premiações.'        
+        description: 'With more than 15 years of experience in the software development area, graduated in Power Systems at IFSC and MBA in Software Architecture. Currently works with architecture and software development, focused on python backend development and C# .Net Core. Passionate about Machine Learning, an area in which he developed a music recognition service and also had the pleasure of winning some awards.'        
       },
       sell: {
-        price: 129.90,
-        discount: 0.61585,
+        price: 79.90,
+        discount: 0.38,
         payoutUrl: "https://pay.kiwify.com.br/gmzGmbI"
       },
       studentFeedBack: {
@@ -104,8 +103,8 @@ export async function getStaticProps() {
         fiveStar: 57
       },
       testimonial: [
-        {name: 'Mauricio', stars: 4.5, comment: 'Sim perfeito'},
-        {name: 'Joemerson Santos L.', stars: 5, comment: 'Excelente conteúdo'}
+        {name: 'Mauricio', stars: 4.5, comment: 'This training is the most useful I found online...Easy to understand, and love how Neal explain everythings..Also his Exam cram helped a lot...'},
+        {name: 'Joemerson Santos L.', stars: 5, comment: 'The course has been good. Applauds to Neal for designing and delivering content to ensure effective learning. One improvement could have been in describing what the features of the incorrect answers represent, to increase learning and clarifying doubts in one go.'}
       ]      
     }
 

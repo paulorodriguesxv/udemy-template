@@ -62,7 +62,7 @@ const CourseCurriculum = ({data}) => {
   return (
     <Box sx={{m:1, pt: 1}}>
         <Typography display="block" variant="h6" className={classes.titleContainer} style={{marginLeft: 0}}>
-              Conteúdo do curso
+            Course content
         </Typography>    
       {data.map((item, key) => (
       <Accordion expanded={expanded === `panel${key}`} onChange={handleChange(`panel${key}`)} key={key}>

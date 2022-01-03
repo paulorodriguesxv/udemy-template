@@ -12,7 +12,7 @@ const CourseDescription = ({data}) => {
   return (
     <Box sx={{m:1, pt: 1}}>
       <Typography display="block" variant="h6" className={classes.titleContainer} style={{marginLeft: 0}}>
-            Descrição
+        Description
       </Typography>
       <Typography display="block" component="span" variant="body2" style={{ }}>
         <ReactMarkdown>{markdownDescription}</ReactMarkdown>

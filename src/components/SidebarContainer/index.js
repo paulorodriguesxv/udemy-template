@@ -54,41 +54,41 @@ const SideBarContainer = (props) => {
             {data.sell.discount > 0 ?
               <>
               <Box sx={styles.flexContainer}>
-                <Typography component="span" variant="body2">{data.sell.discount * 100}% de desconto</Typography>
+                <Typography component="span" variant="body2">{data.sell.discount * 100}% off </Typography>
               </Box>
                           
               <Box sx={styles.flexContainer}>
                 <AccessAlarmIcon sx={{color:"#b32d0f", fontSize: "24px"}}/>
-                <Typography variant="body2" sx={{lineHeight: 1.4, margin: "4px"}}><span style={{fontWeight: "bold"}}>Só mais 5 horas</span> por este preço!</Typography>            
+                <Typography variant="body2" sx={{lineHeight: 1.4, margin: "4px"}}><span style={{fontWeight: "bold"}}>3 days</span> left at this price!</Typography>            
               </Box>
               </> : null
              }
             <Box sx={[styles.flexContainer, {paddingTop: "0.5em"}]}>
-              <Button variant="contained" disableElevation sx={{width: "80%"}} onClick={handleBuyClick}>COMPRAR</Button>
+              <Button variant="contained" disableElevation sx={{width: "80%"}} onClick={handleBuyClick}>Buy now</Button>
               <Button variant="outlined" disableElevation sx={{marginLeft: "0.5em"}}><FavoriteBorderIcon/></Button>
             </Box>
             <Box>
-              <Typography variant="body2" sx={{fontSize: "0.8em", textAlign: "center", padding: "0.5em"}}>Garantia de devolução do dinheiro em 30 dias</Typography>
+              <Typography variant="body2" sx={{fontSize: "0.8em", textAlign: "center", padding: "0.5em"}}>30-Day Money-Back Guarantee</Typography>
             </Box>
 
             <Box sx={{paddingTop:"1em"}}>
-              <Typography variant="h6">Este curso inclui:</Typography>
+              <Typography variant="h6">This course includes:</Typography>
               <List dense={true}>
                 <ListItem >
                   <OndemandVideoIcon sx={iconStyle}/>
-                  <Typography display="block" variant="body2" sx={{pl: 1}}>3 horas de vídeo sob demanda</Typography>
+                  <Typography display="block" variant="body2" sx={{pl: 1}}>3 hours on-demand video</Typography>
                 </ListItem>        
                 <ListItem >
                   <SystemUpdateAltIcon sx={iconStyle}/>
-                  <Typography display="block" variant="body2" sx={{pl: 1}}>1 recurso para download</Typography>
+                  <Typography display="block" variant="body2" sx={{pl: 1}}>1 resources to download</Typography>
                 </ListItem>                     
                 <ListItem >
                   <AllInclusiveIcon sx={iconStyle}/>
-                  <Typography display="block" variant="body2" sx={{pl: 1}}>Acesso total vitalício</Typography>
+                  <Typography display="block" variant="body2" sx={{pl: 1}}>Full lifetime access</Typography>
                 </ListItem>     
                 <ListItem >
                   <PhoneIphoneIcon sx={iconStyle}/>
-                  <Typography display="block" variant="body2" sx={{pl: 1}}>Acesso no dispositivo móvel e na TV</Typography>
+                  <Typography display="block" variant="body2" sx={{pl: 1}}>Access on mobile and TV</Typography>
                 </ListItem>                                                                               
               </List>                 
             </Box>                        

@@ -22,7 +22,7 @@ const TestimonialItem = ({name, stars, comment}) => {
         <Typography display="block" variant="body2" sx={{fontSize: "1em", fontWeight: 700}}>{name}</Typography>
         <Rating name="size-small" sx={{p:0, mt: 1,}} value={stars} readOnly  precision={0.5} size="small" />
         <Typography display="block" variant="body2">{comment}</Typography>
-        <Typography display="block" variant="body2" sx={{fontSize: "0.7em"}}>Esta avaliação foi útil?</Typography>
+        <Typography display="block" variant="body2" sx={{fontSize: "0.7em"}}>Was this review helpful?</Typography>
         <IconButton color="primary" component="span">
           <ThumbUpOffAltIcon/>
         </IconButton>
@@ -40,7 +40,7 @@ const StudentTestimonial = ({data}) => {
   return (
     <Box sx={{m:1, pt: 1}}>
         <Typography display="block" variant="h6" className={classes.titleContainer} style={{marginLeft: 0}}>
-          Avaliações
+          Reviews
         </Typography>
         {data.map(
           (item, key) => (

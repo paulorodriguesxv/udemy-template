@@ -20,7 +20,7 @@ const BuyBar = (props) => {
       <Toolbar>
         <Typography component="span" variant="body2" sx={[{color: theme.palette.text.primary, margin: "12px", fontWeight: 700, fontSize: "1.2em"}]}>{getDiscountedPrice(data.sell.price, data.sell.discount)}</Typography>
         <Box sx={{ flexGrow: 1 }} />
-        <Button variant="contained" color="primary" disableElevation sx={{width: "80%",}} onClick={handleBuyClick}>Comprar agora</Button>
+        <Button variant="contained" color="primary" disableElevation sx={{width: "80%",}} onClick={handleBuyClick}>Buy Now</Button>
       </Toolbar>
     </AppBar>
   )
