@@ -2,12 +2,12 @@ import { createContext, useEffect, useState } from 'react';
 import { THEMES } from '../utils/constants';
 
 const defaultSettings = {
-  theme: THEMES.LIGHT,
+  theme: THEMES.LIGHT
 };
 
 const SettingsContext = createContext({
   settings: defaultSettings,
-  saveSettings: () => {},
+  saveSettings: () => {}
 });
 
 export const restoreSettings = () => {
@@ -34,7 +34,7 @@ export const storeSettings = (settings) => {
 
 export const SettingsProvider = ({ settings, children }) => {
   const [currentSettings, setCurrentSettings] = useState(
-    settings || defaultSettings,
+    settings || defaultSettings
   );
 
   const handleSaveSettings = (update = {}) => {
@@ -54,9 +54,10 @@ export const SettingsProvider = ({ settings, children }) => {
 
   return (
     <SettingsContext.Provider
+      // eslint-disable-next-line react/jsx-no-constructed-context-values
       value={{
         settings: currentSettings,
-        saveSettings: handleSaveSettings,
+        saveSettings: handleSaveSettings
       }}
     >
       {children}

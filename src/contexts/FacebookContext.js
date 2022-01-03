@@ -1,68 +1,69 @@
 import { createContext, useEffect, useState } from 'react';
 
 const FacebookContext = createContext({
-    pixel: null, /* a raw pixel object from react-facebook-pixel */
-    pixelId: null,
-    trackEvent: () => {} /* function to track events */
-  });
-export default FacebookContext
+  pixel: null /* a raw pixel object from react-facebook-pixel */,
+  pixelId: null,
+  trackEvent: () => {} /* function to track events */
+});
+export default FacebookContext;
 
-export const FacebookProvider = ({facebookPixelId, children}) => {
-  
-  const [reactPixel, setReactPixel] = useState()
-  const [pixelId, setPixelId] = useState()
+export const FacebookProvider = ({ facebookPixelId, children }) => {
+  const [reactPixel, setReactPixel] = useState();
+  const [pixelId, setPixelId] = useState();
 
   const isFacebbokPixelIdIsPresent = () => {
-
-    if (!facebookPixelId){
-      console.log('No facebook Pixel Id has been defined. Please set facebookPixelId prop on FacebookProvider')
-      return false
+    if (!facebookPixelId) {
+      console.log(
+        'No facebook Pixel Id has been defined. Please set facebookPixelId prop on FacebookProvider'
+      );
+      return false;
     }
-    return true
-  }
+    return true;
+  };
 
   useEffect(() => {
     if (!isFacebbokPixelIdIsPresent()) {
-      return
+      return;
     }
 
-    let fb
+    let fb;
 
     import('react-facebook-pixel')
-    .then((module) => (fb = module.default))
-    .then((ReactPixel) => {      
-      ReactPixel.init(facebookPixelId) 
+      // eslint-disable-next-line no-return-assign
+      .then((module) => (fb = module.default))
+      .then((ReactPixel) => {
+        ReactPixel.init(facebookPixelId);
 
-      /* for more information, please read the react-facebook-pixel docs on
+        /* for more information, please read the react-facebook-pixel docs on
           https://github.com/zsajjad/react-facebook-pixel */
-      ReactPixel.grantConsent()
+        ReactPixel.grantConsent();
 
-      ReactPixel.track('ViewContent')
-      /*ReactPixel.pageView()*/
+        ReactPixel.track('ViewContent');
+        /* ReactPixel.pageView() */
 
-      setReactPixel(fb)
-      setPixelId(facebookPixelId)
-
-    })
-  },[])
+        setReactPixel(fb);
+        setPixelId(facebookPixelId);
+      });
+  }, []);
 
   const trackEventHandle = (event, data) => {
     if (!isFacebbokPixelIdIsPresent()) {
-      return
+      return;
     }
 
-    reactPixel.track(event, data)
-  }
+    reactPixel.track(event, data);
+  };
 
   return (
     <FacebookContext.Provider
+      // eslint-disable-next-line react/jsx-no-constructed-context-values
       value={{
         pixel: reactPixel,
-        pixelId: pixelId,
+        pixelId,
         trackEvent: trackEventHandle
       }}
     >
       {children}
     </FacebookContext.Provider>
-  );  
-}
+  );
+};

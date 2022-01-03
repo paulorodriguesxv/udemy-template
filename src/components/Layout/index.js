@@ -4,21 +4,19 @@ import { makeStyles } from '@mui/styles';
 
 import Head from 'next/head';
 
-import TopBar from "../TopBar"
-
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.dark,
     display: 'flex',
     height: '100vh',
     overflow: 'hidden',
-    width: '100vw',
+    width: '100vw'
   },
   wrapper: {
     display: 'flex',
     flex: '1 1 auto',
     overflow: 'hidden',
-    paddingTop: 56,
+    paddingTop: 56
     /*
     [theme.breakpoints.up('lg')]: {
       paddingLeft: 256,
@@ -28,17 +26,16 @@ const useStyles = makeStyles((theme) => ({
   contentContainer: {
     display: 'flex',
     flex: '1 1 auto',
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   content: {
     flex: '1 1 auto',
     height: '100%',
-    overflow: 'auto',
-  },
+    overflow: 'auto'
+  }
 }));
 
-
-function Layout(props) {
+const Layout = (props) => {
   const classes = useStyles();
   return (
     <>
@@ -48,10 +45,6 @@ function Layout(props) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className={classes.root}>
-
-
-      
-      
         <div className={classes.wrapper}>
           <div className={classes.contentContainer}>
             <div className={classes.content}>{props.children}</div>
@@ -60,6 +53,6 @@ function Layout(props) {
       </div>
     </>
   );
-}
+};
 
 export default Layout;

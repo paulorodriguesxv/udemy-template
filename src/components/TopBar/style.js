@@ -4,29 +4,29 @@ const useStyles = makeStyles((theme) => ({
   root: {
     boxShadow: 'none',
     zIndex: theme.zIndex.drawer + 1,
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.default
   },
   toolbar: {
     minHeight: 56,
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
   logo: {
     cursor: 'pointer',
     height: 18,
-    marginLeft: theme.spacing(3),
+    marginLeft: theme.spacing(3)
   },
   search: {
     padding: '2px 4px',
     display: 'flex',
     alignItems: 'center',
     height: 35,
-    width: 700,
+    width: 700
   },
   input: {
-    flex: 1,
+    flex: 1
   }
 }));
 
-export default useStyles
+export default useStyles;

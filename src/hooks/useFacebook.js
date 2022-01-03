@@ -1,10 +1,10 @@
-import { useContext } from "react";
-import FacebookContext from "../contexts/FacebookContext";
+import { useContext } from 'react';
+import FacebookContext from '../contexts/FacebookContext';
 
 const useFacebook = () => {
-    const context = useContext(FacebookContext);
-  
-    return context;
-}
+  const context = useContext(FacebookContext);
 
-export default useFacebook
+  return context;
+};
+
+export default useFacebook;
